@@ -3083,3 +3083,85 @@ dtype: int64}]))),
 2025-06-28 15:06:07,949:WARNING:C:\Users\Yashar\Flask_ML_End_to_End\app.py:26: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead
   prediction = int(prediction['prediction_label'])
 
+2025-06-28 15:41:34,256:WARNING:C:\Users\Yashar\anaconda3\envs\pycaret_env\lib\site-packages\pydantic\_internal\_config.py:373: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+
+2025-06-28 15:41:36,648:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 15:41:36,648:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 15:41:36,648:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 15:41:36,648:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 15:41:36,933:INFO:Initializing load_model()
+2025-06-28 15:41:36,933:INFO:load_model(model_name=gbr, platform=None, authentication=None, verbose=True)
+2025-06-28 15:41:47,376:INFO:Initializing predict_model()
+2025-06-28 15:41:47,376:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D62716B550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('bin_numeric_features',
+                 TransformerWrapper(include=['age', 'bmi'],
+                                    transformer=KBinsDiscretizer(encode='ordinal',
+                                                                 strategy='kmeans'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=0, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D62717D870>)
+2025-06-28 15:41:47,378:INFO:Checking exceptions
+2025-06-28 15:41:47,379:INFO:Preloading libraries
+2025-06-28 15:41:47,380:INFO:Set up data.
+2025-06-28 15:41:47,391:INFO:Set up index.
+2025-06-28 15:41:47,621:WARNING:C:\Users\Yashar\Flask_ML_End_to_End\app.py:26: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead
+  prediction = int(prediction['prediction_label'])
+
+2025-06-28 16:38:35,624:WARNING:C:\Users\Yashar\anaconda3\envs\pycaret_env\lib\site-packages\pydantic\_internal\_config.py:373: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+
+2025-06-28 16:38:37,791:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 16:38:37,791:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 16:38:37,791:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 16:38:37,791:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-28 16:38:38,044:INFO:Initializing load_model()
+2025-06-28 16:38:38,044:INFO:load_model(model_name=gbr, platform=None, authentication=None, verbose=True)
+2025-06-28 16:44:34,182:INFO:Initializing predict_model()
+2025-06-28 16:44:34,182:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C1DCD2BAF0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker'],
+                                    transfor...
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('bin_numeric_features',
+                 TransformerWrapper(include=['age', 'bmi'],
+                                    transformer=KBinsDiscretizer(encode='ordinal',
+                                                                 strategy='kmeans'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=0, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C1DCD3D3F0>)
+2025-06-28 16:44:34,182:INFO:Checking exceptions
+2025-06-28 16:44:34,182:INFO:Preloading libraries
+2025-06-28 16:44:34,183:INFO:Set up data.
+2025-06-28 16:44:34,194:INFO:Set up index.
+2025-06-28 16:44:34,506:WARNING:C:\Users\Yashar\Flask_ML_End_to_End\app.py:26: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead
+  prediction = int(prediction['prediction_label'])
+
